@@ -1,0 +1,183 @@
+{
+  "schema_version": "0.1.0",
+  "project": {
+    "title": "Original production plan from authorized video evidence",
+    "platform": "short-form video",
+    "aspect_ratio": "1280:720",
+    "duration_seconds": 6.0,
+    "creative_brief": "Create an original 6-second 16:9 brand intro for an invented paper-craft studio (PAPERFIELD, tagline 'one fold, one flight.'), using a staggered text reveal over one slow-pushing luminous object — new subject, new brand, new copy; do not reproduce the reference's blob, wordmark, or taglines.",
+    "global_negative_constraints": [
+      "No source footage, copied frames, exact composition, original dialogue, music, or source-specific visual expression",
+      "No recognizable people, voices, copyrighted characters, third-party logos, trademarks, packaging, or pseudo-text unless independently authorized"
+    ],
+    "analysis_coverage": {
+      "status": "partial",
+      "sampled_frame_count": 6,
+      "analyzed_frame_count": 6,
+      "analyzed_until_seconds": 6.0,
+      "vision_model": "none — Ollama not installed on this VM; per-frame analysis is human visual review of the 6 extracted frames",
+      "vision_model_note": "qwen2.5vl:7b was NOT run: no ollama binary; 1.1 GB RAM free at run time, insufficient for a 7B VLM. Coverage is 'partial' for this reason even though all 6 sampled frames were reviewed."
+    },
+    "approval_status": "requires_human_approval"
+  },
+  "beats": [
+    {
+      "id": "B001",
+      "start_seconds": 0.0,
+      "end_seconds": 1.0,
+      "evidence_ids": [
+        "F001"
+      ],
+      "observable_evidence": "Scene: Near-black frame; one iridescent liquid-metal blob, centre-right, about 55% of frame width; text only as a faint ghost.; subjects: iridescent liquid-metal blob; action: Very slow push-in begins; wordmark and pill text are fading in from black.; composition: Blob right of centre against large empty black space on the left; faint dust specks top-left..",
+      "reusable_mechanism": "Cold open on a single luminous object in darkness; text enters only after the object is established.",
+      "original_adaptation": "Cold open on the paper crane alone in near-darkness; no wordmark yet, only the crane's vermilion wing-tip catching first light.",
+      "prompt": {
+        "scene": "Near-black desk scene at dawn; a single hand-folded paper crane, cream paper with one vermilion wing-tip, resting on a dawn-lit wooden desk, no text on screen.",
+        "visual": "Low-key, near-black background; one warm highlight on the crane's wing-tip; large empty space left of frame.",
+        "action": "Camera holds, then begins a very slow push-in; the crane does not move.",
+        "camera": "Static 16:9 frame, slow push-in, eye-level, centred right of frame.",
+        "sound": "Silence, or a single soft paper-rustle cue at the end of the beat (new sound, not from the reference).",
+        "continuity": "Crane position, desk grain and light direction are locked for all later beats.",
+        "negative_constraints": [
+          "No text, no logo, no wordmark in this beat",
+          "No second object, no person, no camera shake",
+          "Replace or exclude: MOSEN wordmark",
+          "Replace or exclude: AI 影像工作室",
+          "Replace or exclude: one person, one forest."
+        ]
+      }
+    },
+    {
+      "id": "B002",
+      "start_seconds": 1.0,
+      "end_seconds": 2.0,
+      "evidence_ids": [
+        "F002"
+      ],
+      "observable_evidence": "Scene: Text block entering left: pill badge legible, large white wordmark legible; tagline lines not yet visible.; subjects: iridescent liquid-metal blob, text block (pill badge + wordmark); action: Pill badge and wordmark fade/slide in; blob continues its slow push-in and grows slightly.; composition: Text block left third; blob right half; the final letter of the wordmark overlaps the blob's bright left rim..",
+      "reusable_mechanism": "First text layer arrives after the object: a small pill badge, then the large wordmark.",
+      "original_adaptation": "First text layer arrives after the crane: a small pill badge reading 'PAPER CRAFT STUDIO', then the wordmark PAPERFIELD.",
+      "prompt": {
+        "scene": "Same desk scene; a small pill badge fades in at left, then the wordmark PAPERFIELD appears in large white type.",
+        "visual": "White type on near-black; badge is a thin outlined pill; wordmark sits clear of the crane, not overlapping it.",
+        "action": "Badge fades in first, wordmark follows; crane keeps its slow push-in.",
+        "camera": "Same slow push-in continues; framing unchanged.",
+        "sound": "Silence.",
+        "continuity": "Wordmark position, size and tracking match the lockup that will hold to the end.",
+        "negative_constraints": [
+          "Wordmark must not overlap the crane's bright edge",
+          "No tagline yet, no Chinese text yet",
+          "Replace or exclude: MOSEN wordmark",
+          "Replace or exclude: AI 影像工作室"
+        ]
+      }
+    },
+    {
+      "id": "B003",
+      "start_seconds": 2.0,
+      "end_seconds": 3.0,
+      "evidence_ids": [
+        "F003"
+      ],
+      "observable_evidence": "Scene: Full text lockup visible: pill badge, wordmark, italic English tagline, rule line, and a dim Chinese line.; subjects: iridescent liquid-metal blob, full text lockup; action: Italic tagline and rule line fade in; the Chinese line is still dim; blob keeps pushing in.; composition: Text stack occupies the left third; blob fills the right half; generous black negative space above..",
+      "reusable_mechanism": "Staggered reveal, one line at a time: badge → wordmark → tagline → local line.",
+      "original_adaptation": "Staggered reveal continues: italic tagline 'one fold, one flight.' fades in under PAPERFIELD, then a thin rule.",
+      "prompt": {
+        "scene": "Same desk scene; italic tagline 'one fold, one flight.' fades in beneath the wordmark, followed by a thin rule line.",
+        "visual": "Italic serif tagline in white, smaller than the wordmark; rule is a short thin white line.",
+        "action": "Tagline and rule fade in one after the other; crane push-in continues.",
+        "camera": "Same slow push-in continues; framing unchanged.",
+        "sound": "Silence.",
+        "continuity": "Text stack position is locked; no reflow between beats.",
+        "negative_constraints": [
+          "Do not reuse the reference tagline or its Chinese line",
+          "No new objects enter the frame",
+          "Replace or exclude: MOSEN wordmark",
+          "Replace or exclude: AI 影像工作室",
+          "Replace or exclude: one person, one forest.",
+          "Replace or exclude: 一人之森 · AI 驱动"
+        ]
+      }
+    },
+    {
+      "id": "B004",
+      "start_seconds": 3.0,
+      "end_seconds": 4.0,
+      "evidence_ids": [
+        "F004"
+      ],
+      "observable_evidence": "Scene: Hold on the full lockup; the Chinese line brightens toward full legibility.; subjects: iridescent liquid-metal blob, full text lockup; action: Final line brightens; otherwise the frame is a hold with the slow push-in.; composition: Same lockup as the previous second; blob marginally larger..",
+      "reusable_mechanism": "Hold the lockup and let the last line settle; the push-in supplies the only motion.",
+      "original_adaptation": "Hold the lockup and let a small line of invented Chinese copy, '一纸一程', settle to full legibility.",
+      "prompt": {
+        "scene": "Same desk scene; the final line of copy brightens to full legibility under the rule.",
+        "visual": "Final line in light grey-white, smaller than the tagline; all other elements unchanged.",
+        "action": "Last line brightens; crane push-in continues at the same slow rate.",
+        "camera": "Same slow push-in continues; framing unchanged.",
+        "sound": "Silence.",
+        "continuity": "All text positions unchanged from the previous beat.",
+        "negative_constraints": [
+          "No new text, no layout change",
+          "No colour shift on the crane",
+          "Replace or exclude: MOSEN wordmark",
+          "Replace or exclude: AI 影像工作室",
+          "Replace or exclude: one person, one forest.",
+          "Replace or exclude: 一人之森 · AI 驱动"
+        ]
+      }
+    },
+    {
+      "id": "B005",
+      "start_seconds": 4.0,
+      "end_seconds": 5.0,
+      "evidence_ids": [
+        "F005"
+      ],
+      "observable_evidence": "Scene: Final lockup fully legible; blob at its largest so far; dust specks visible top-left.; subjects: iridescent liquid-metal blob, full text lockup; action: Hold; slow push-in continues; no new element enters.; composition: Wordmark left, blob right, black negative space above; layout identical to the previous second..",
+      "reusable_mechanism": "Payoff hold: the complete lockup sits still long enough to be read.",
+      "original_adaptation": "Payoff hold: the complete PAPERFIELD lockup sits still long enough to be read.",
+      "prompt": {
+        "scene": "Same desk scene; the complete PAPERFIELD lockup holds still.",
+        "visual": "Full lockup legible: badge, wordmark, italic tagline, rule, final line; crane at its largest.",
+        "action": "Hold; slow push-in continues to its end position.",
+        "camera": "Push-in eases to a stop; framing locked.",
+        "sound": "Silence, or a single soft chime cue (new sound).",
+        "continuity": "Lockup identical to the previous beat; push-in ends here.",
+        "negative_constraints": [
+          "No new text or objects",
+          "No zoom jump, no cut",
+          "Replace or exclude: MOSEN wordmark",
+          "Replace or exclude: AI 影像工作室",
+          "Replace or exclude: one person, one forest.",
+          "Replace or exclude: 一人之森 · AI 驱动"
+        ]
+      }
+    },
+    {
+      "id": "B006",
+      "start_seconds": 5.0,
+      "end_seconds": 6.0,
+      "evidence_ids": [
+        "F006"
+      ],
+      "observable_evidence": "Scene: Final hold, identical layout to the previous second; blob at maximum size; end of the 6-second intro.; subjects: iridescent liquid-metal blob, full text lockup; action: Hold to the end of the clip; push-in has effectively stopped.; composition: Identical to the previous second; the intro ends on the full lockup..",
+      "reusable_mechanism": "End on the lockup: the viewer leaves with brand + tagline, not with motion.",
+      "original_adaptation": "End on the lockup: the viewer leaves with PAPERFIELD + 'one fold, one flight.', not with motion.",
+      "prompt": {
+        "scene": "Same desk scene; the complete PAPERFIELD lockup holds to the end of the clip.",
+        "visual": "Full lockup legible against near-black; crane at maximum size, wing-tip highlight brightest.",
+        "action": "Hold; no further camera movement.",
+        "camera": "Static end frame; no push, no cut.",
+        "sound": "Silence to the end.",
+        "continuity": "End frame matches the previous beat exactly.",
+        "negative_constraints": [
+          "No fade to black, no end card, no extra logo",
+          "Replace or exclude: MOSEN wordmark",
+          "Replace or exclude: AI 影像工作室",
+          "Replace or exclude: one person, one forest.",
+          "Replace or exclude: 一人之森 · AI 驱动"
+        ]
+      }
+    }
+  ]
+}

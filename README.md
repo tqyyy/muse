@@ -1,7 +1,34 @@
 # muse
 
-Muse 帮我管理的仓库。
+我的 Muse skill 仓库：本机 `~/workspace/custom-skills/` 里安装的全部 skill 的整合备份（文本文件）。
 
-## 内容
+## Skill 清单
 
-- `tong-jincheng-perspective/`：童锦程视角 skill（来源：hotcoffeeshake/tong-jincheng-skill，MIT 许可证）
+- `ai-storyboard-director/` — "AI Storyboard Director v5.2 — director-grade AIGC storyboard skill: turn a script into an…
+- `batch_job_board_applying/`
+- `boss-crawler/` — 用 DrissionPage 爬取 BOSS 直聘职位，解析简历，用规则打分 + LLM 语义分析做岗位匹配，生成 HTML 可视化报告，自动投递匹配岗位，并启动内嵌的 Markd…
+- `cueshot-review-room-starter/` — Use when reviewing an AI video or keyframes with a lightweight director-style checklist.
+- `cueshot-shot-designer-starter/` — Use when turning a rough AI video idea into a basic shot plan and model-neutral prompt.
+- `find-skills/` — Helps users discover and install agent skills when they ask questions like "how do I do X"…
+- `job_board_recruiter_replies/`
+- `muse-animated-short-film/` — "Skill dựng phim hoạt hình ngắn từ đầu đến cuối trên Muse AI: thu thập yêu cầu (thời lượng…
+- `muse-video/` — "When the user asks to 策划/构思/设计/写脚本/画分镜 for a video project — e.g. '帮我策划一个广告创意' '这个产品演示视频怎…
+- `muse-video-prompt-skill/` — "Prompt engineering workflow skill for Muse built-in video generation (Muse Video): six-pa…
+- `reference-video-blueprint/` — Analyze authorized videos into original prompt contracts.
+- `remake-depth-breakdown/` — use when given a reference video to remake — extract depth video, frame-by-frame breakdown…
+- `seedance-shot-design/` — >
+- `skill-auto-router/` — "Use when starting any conversation or receiving any task from the user — automatically se…
+- `taishang-laojun/` — 太上老君炼丹炉总控台
+- `tong-jincheng-perspective/` — 童锦程视角：以"深情祖师爷"、直播情感内容创作者的思维框架看待人际关系、社会动态与个人成长
+- `tslj-idea/` — 看火：选题判断
+- `tslj-monetize/` — 成丹：变现承接
+- `tslj-open/` — 开炉：开头与结构
+- `tslj-script/` — 回炉：完整成稿与改稿
+- `tslj-select/` — 选材：找对标、拆爆款
+- `tslj-series/` — 丹方：系列策划
+- `tslj-title/` — 收丹：标题
+- `using-superpowers/` — Use when starting any conversation - establishes how to find and use skills, requiring ski…
+- `video-subtitles/` — Transcribe a video and add translated subtitles in any language, either burned into the pi…
+- `xiaoma-director/` — 编导分镜与视频出片：用户想做视频时，判定片种，按片种的结构、节奏、镜头语言写出专业分镜表（镜号、时间码、景别角度运镜、画面、台词旁白字幕、音效音乐、转场、叙事目的、片种扩展列），出…
+
+注：各 skill 内的二进制素材（字体、图片、示例视频、PDF 等）未包含在本仓库中，仅保存在本机。

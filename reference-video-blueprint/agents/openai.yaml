@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reference Video Blueprint"
+  short_description: "Turn an authorized reference video into an original production plan."
+  default_prompt: "Use $reference-video-blueprint to analyze my authorized local reference video, identify reusable mechanisms, and create an original production blueprint."

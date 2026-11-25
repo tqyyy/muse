@@ -1,0 +1,69 @@
+{
+  "project": {
+    "title": "Original Research-to-Storyboard Micro Explainer",
+    "platform": "short-form vertical video",
+    "aspect_ratio": "9:16",
+    "duration_seconds": 9,
+    "creative_brief": "Create a materially new micro explainer showing scattered research becoming a clear original production plan.",
+    "global_negative_constraints": [
+      "Do not use the source video, its frames, or its exact color sequence",
+      "No recognizable people, third-party logos, trademarks, copied dialogue, music, or pseudo-text"
+    ]
+  },
+  "beats": [
+    {
+      "id": "B01",
+      "start_seconds": 0,
+      "end_seconds": 3,
+      "evidence_ids": ["F001", "F002", "F003", "F004", "F005", "F006"],
+      "observable_evidence": "The reviewed synthetic source holds one stable full-frame visual state during its opening section.",
+      "reusable_mechanism": "A quiet, stable opening state gives a later visual transition clear contrast.",
+      "original_adaptation": "Small abstract research-note fragments drift in a charcoal workspace before any structure appears.",
+      "prompt": {
+        "scene": "An original editorial workspace built only from abstract paper shapes and soft light.",
+        "visual": "Three irregular off-white note fragments float apart on charcoal black with a muted teal edge light.",
+        "action": "The fragments drift slowly inward but remain visibly unorganized.",
+        "camera": "Centered, calm macro view with a very slow forward move.",
+        "sound": "Low paper texture and a restrained tonal bed, no dialogue or melody.",
+        "continuity": "Use charcoal, muted teal, and a single warm amber accent; keep the layout text-free.",
+        "negative_constraints": ["No source-frame recreation", "No UI dashboard", "No brand marks"]
+      }
+    },
+    {
+      "id": "B02",
+      "start_seconds": 3,
+      "end_seconds": 6,
+      "evidence_ids": ["F007", "F008", "F009", "F010", "F011", "F012"],
+      "observable_evidence": "The reviewed synthetic source changes to a second stable full-frame visual state.",
+      "reusable_mechanism": "A sharp but legible state change can communicate organization or progress.",
+      "original_adaptation": "The note fragments align into three clean evidence cards with visible links between them.",
+      "prompt": {
+        "scene": "The same abstract workspace as B01 after an organizing action begins.",
+        "visual": "Three evidence cards align on a central vertical axis, connected by thin cyan guide lines.",
+        "action": "Each card snaps into place one after another, turning disorder into a readable structure.",
+        "camera": "Continue the centered forward move; use one clean visual transition, not a copied cut.",
+        "sound": "One soft paper click for each alignment, then a subtle rising tone.",
+        "continuity": "Preserve B01's charcoal field, teal edge light, amber accent, and text-free geometry.",
+        "negative_constraints": ["No copied timing from source", "No faces", "No text labels"]
+      }
+    },
+    {
+      "id": "B03",
+      "start_seconds": 6,
+      "end_seconds": 9,
+      "evidence_ids": ["F013", "F014", "F015", "F016", "F017", "F018"],
+      "observable_evidence": "The reviewed synthetic source holds a third stable full-frame visual state through its ending.",
+      "reusable_mechanism": "A stable resolved state can act as a payoff and leave a clean final impression.",
+      "original_adaptation": "The evidence cards unfold into a fresh storyboard grid with one warm focal tile, ready for an original production handoff.",
+      "prompt": {
+        "scene": "The same workspace after the evidence cards are fully organized.",
+        "visual": "A luminous abstract storyboard grid expands from the cards, with one small amber focal tile.",
+        "action": "The grid settles into a complete, open composition that suggests readiness to create.",
+        "camera": "Finish the gentle forward move on a stable centered frame with breathing room.",
+        "sound": "A single clean chime followed by a short natural decay.",
+        "continuity": "Keep the B01/B02 palette and geometry; end with no logo, no CTA text, and no watermark.",
+        "negative_constraints": ["No reference-frame recreation", "No product packaging", "No copyrighted characters"]
+      }
+    }
+  ]
+}

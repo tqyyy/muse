@@ -1,0 +1,27 @@
+name: batch_job_board_applying
+title: Batch job-board applications
+description: Apply to many job-board postings in a browser batch by screening list signals, verifying details, and reconciling counts after interruptions.
+category: Work and knowledge
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:d9fe5ce7-3a16-4c1b-854f-7fe765163fa0
+  - message:6a9d48e2-ff25-469a-bf68-36df3d401f8d
+  - message:12b77e15-2b4c-4b0e-8a20-2afe4d6d9a14
+  - message:517b66ee-3244-4266-8631-0df5d21becc2
+  - message:assistant-msg-9aa45a8d-b5c0-29e3-6b11-619e47187774
+  - message:assistant-msg-931b6f04-44ed-4a90-ac47-25b623376ae3
+  - scheduler_job:boss-auto-apply-20261119
+  - message:f3fb163d-3c0a-420e-a79c-d399fd3c53e1
+  - message:01cc42f6-c037-4acf-ad8e-c79e29eea108
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: Post-install batch runs reconcile verified counts to the contacted list with zero unverified items counted as verified and zero applications that fail detail-level criteria such as rest pattern, salary floor or excluded category.
+    window_days: 7
+  needs_review: false
+  rationale: 'The 2026-11-18 conversation shows a repeatable batch method emerging only through dense user correction: do not search by the benefit keyword (message:d9fe5ce7-3a16-4c1b-854f-7fe765163fa0), skip list postings whose minimum pay is below the floor without opening detail (message:6a9d48e2-ff25-469a-bf68-36df3d401f8d), run multi-round loops applying only to postings whose button still shows unapplied (message:12b77e15-2b4c-4b0e-8a20-2afe4d6d9a14), close unnecessary tabs to avoid stalls (message:517b66ee-3244-4266-8631-0df5d21becc2), and restart the browser after a stall (message:01cc42f6-c037-4acf-ad8e-c79e29eea108) with verification sliders repeatedly interrupting login (message:f3fb163d-3c0a-420e-a79c-d399fd3c53e1). The wrap-up then had to recover 65 applications from an interrupted round via the contacted list and still counted about 20 unopened preview messages toward the target (message:assistant-msg-9aa45a8d-b5c0-29e3-6b11-619e47187774), while naming borderline misfires that passed screening (message:assistant-msg-931b6f04-44ed-4a90-ac47-25b623376ae3). muse.skill_search for boss zhipin job application and muse.connector_search for boss zhipin returned no matches, so no existing skill or connector doc covers this method. The method recurs tomorrow via scheduler_job:boss-auto-apply-20261119, so a generic skill that takes criteria from the current task rather than hardcoding this user''s thresholds should change the next run''s screening, tab hygiene and reconciliation behavior.'
+  review_after: 2026-11-25T14:26:39.701543+00:00
+  reviewed_at: 2026-11-18T14:26:39.701543+00:00
+  run_id: sirun_b951f4a5fd094b5bbcd3a9d8dbef8845

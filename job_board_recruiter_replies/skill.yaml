@@ -1,0 +1,27 @@
+name: job_board_recruiter_replies
+title: Job-board recruiter replies
+description: Reply to job-board recruiters from the user's background facts without forwarding them verbatim, send a resume on request, and verify each reply in the conversation.
+category: Work and knowledge
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:37c50ac6-81ca-4412-85d3-93fbc1588620
+  - message:7c216a68-cf0f-4623-8000-ec34b215bbd6
+  - message:89393d7d-18aa-4cb2-ba4e-8feadf04b361
+  - message:7fe97dc2-2add-4366-a0f4-ed9bf2f1f0fc
+  - message:7d9f1378-a330-44d7-a0d9-8a564478b112
+  - message:assistant-msg-f08d893a-8dea-4175-8cc9-ef4d8fcda470
+  - message:assistant-msg-f0a7f39f-8b04-4799-816b-6a74fd133210
+  - message:assistant-msg-4d343a7d-4127-5a01-aea6-7f77428bbc2f
+  - scheduler_job:morning-job-briefing
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: Post-install recruiter-reply runs send no verbatim background paragraph to a recruiter, each sent reply answers only the question asked, a resume is sent when requested and authorized, and zero replies invent experience, swap contact details or accept a fee.
+    window_days: 7
+  needs_review: false
+  rationale: 'On 2026-11-19 the user authorized autonomous recruiter replies with a background paragraph (message:37c50ac6-81ca-4412-85d3-93fbc1588620 and message:7c216a68-cf0f-4623-8000-ec34b215bbd6), then had to correct the agent twice within minutes: do not send that paragraph to HR (message:89393d7d-18aa-4cb2-ba4e-8feadf04b361) and instead judge and optimize what to send (message:7fe97dc2-2add-4366-a0f4-ed9bf2f1f0fc), which the assistant then acknowledged (message:assistant-msg-f08d893a-8dea-4175-8cc9-ef4d8fcda470 and message:assistant-msg-f0a7f39f-8b04-4799-816b-6a74fd133210). The same session shows the reply method recurs and needs its own rules: a resume was sent to one recruiter and a salary decline to another (message:assistant-msg-4d343a7d-4127-5a01-aea6-7f77428bbc2f), applying was prioritized over replying (message:7d9f1378-a330-44d7-a0d9-8a564478b112), and the morning job briefing will surface new recruiter replies daily (scheduler_job:morning-job-briefing). muse.skill_search for recruiter replies returned only batch_job_board_applying, messaging and customer_outreach, none of which covers judging background facts per question on a job board, so a distinct generic skill that takes authorization and limits from the current task addresses the correction without hardcoding this user''s facts. The existing batch_job_board_applying skill is still inside its measurement window (review_after 2026-11-25) and covers applying, not replying, so it is left unchanged.'
+  review_after: 2026-11-26T06:26:28.888234+00:00
+  reviewed_at: 2026-11-19T06:26:28.888234+00:00
+  run_id: sirun_cff12ded45664233a26db641c271f2af
