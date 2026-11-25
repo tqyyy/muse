@@ -1,0 +1,1 @@
+{"api_key":"PASTE_VIA_SECURE_VAULT_ONLY_DO_NOT_PUT_REAL_KEY_HERE","base_url":"https://api.deepseek.com/v1","concurrency":4,"json_mode":true,"max_retries":3,"model":"deepseek-chat","protocol":"openai","stages":{},"temperature":0.3,"timeout":120}
