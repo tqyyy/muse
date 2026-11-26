@@ -40,6 +40,7 @@
 - `sd-story-fidelity-auditor/` — 剧情忠实度审核引擎（审片第一关）：对照锁定剧本/分镜检查成片有没有讲对故事（事件/因果/人物动机/信息顺序/台词反应），出 STORY-PASS/WARN/FAIL
 - `consistency-auditor/` — 一致性一号（审片第二步）：逐镜核对人物定妆、脸型身份、服装造型、道具、场景布局与跨镜头视觉连续性
 - `sound-auditor/` — 声音审核一号（审片第三步）：全量声音审核——每个可听见的声音都要有剧本/画面/物理依据，双向溯源，带时间码报告与返修指令，S/A 级问题即 FAIL
+- `sound-repair-director/` — 声音反修一号：声音审核判 FAIL 后做逐项诊断、定最小修复方案、生成可直接执行的 AI 声音返修提示词，修后回声音审核一号复审
 - `seedance-shot-design/` — >
 - `skill-auto-router/` — "Use when starting any conversation or receiving any task from the user — automatically se…
 - `taishang-laojun/` — 太上老君炼丹炉总控台
