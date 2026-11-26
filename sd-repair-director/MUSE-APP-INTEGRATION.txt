@@ -1,0 +1,12 @@
+Muse AI 网页 App 接入说明
+
+1. 先确认 Muse App 的 Skill/自定义指令功能是否支持多文件 Skill、文件夹导入或知识库附件。
+2. 若支持标准 Skill 导入：导入整个 sd-repair-director 文件夹，不要只导入 SKILL.md，references 目录包含返修模板和交接规则。
+3. 若只支持自定义指令：将 SKILL.md 内容粘贴为技能主指令，并把 references 下三个 Markdown 文件作为知识附件上传。
+4. 若只支持单段提示词：将 SKILL.md 和 references 内容整合成一个完整自定义指令；注意可能受上下文长度限制，优先保留职责边界、工作流、输出格式和 Muse 提示词模板。
+5. 不要把本技能配置成每次生成后都自动重写。只在 sd-qc-engine 返回 FAIL 或需返修的 WARN 时调用。
+6. 不要允许本技能覆盖 sd-qc-engine 的正式判定，也不要允许其擅自更改锁定剧本。
+7. 首次使用先 dry-run，用户审核返修提示词后再重新生成。
+
+推荐路由指令：
+“当 sd-qc-engine 对视频返回 FAIL，或返回需要返修的 WARN 时，调用 sd-repair-director。传入完整 QC 报告、对应锁定剧本/分镜、失败视频、相邻镜头和资产连续性资料。由 sd-repair-director 输出根因诊断、最小改动策略、完整 Muse AI 返修提示词和复验交接包。返修后必须重新交给 sd-qc-engine，正式 PASS/WARN/FAIL 仍由 sd-qc-engine 决定。若根因属于剧本或分镜设计，退回 xiaoma-director/总控，不得自行改写。”

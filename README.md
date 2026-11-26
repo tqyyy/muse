@@ -35,6 +35,8 @@
 - `remotion-saas/` — Build an app with Remotion
 - `remotion-studio/` — Preview a Remotion video
 - `remotion-upgrade/` — Upgrade Remotion, and related packages
+- `sd-qc-engine/` — 成片质检与连续性管理专精引擎：跨镜/跨集一致性台账、剪辑转场设计与分段门、声音设计模板与后期音乐、出稿机检
+- `sd-repair-director/` — 导演级视频返修引擎（返修一号）：接收 sd-qc-engine 的 FAIL/WARN 报告，诊断根因、制定最小改动返修方案、重构 Muse AI 返修提示词并组织复验
 - `seedance-shot-design/` — >
 - `skill-auto-router/` — "Use when starting any conversation or receiving any task from the user — automatically se…
 - `taishang-laojun/` — 太上老君炼丹炉总控台
