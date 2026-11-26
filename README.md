@@ -39,6 +39,7 @@
 - `skill-auto-router/` — "Use when starting any conversation or receiving any task from the user — automatically se…
 - `taishang-laojun/` — 太上老君炼丹炉总控台
 - `tong-jincheng-perspective/` — 童锦程视角：以"深情祖师爷"、直播情感内容创作者的思维框架看待人际关系、社会动态与个人成长
+- `transition-craft/` — Six transitions with exact presets and the editing rules behind them: photo collage burst, Droste recursive zoom, impact tile-flip mosaic, bokeh light-spot transition, 3D photo cloud gallery and a camera-shake distort cut (vargHQ, MIT)
 - `tslj-idea/` — 看火：选题判断
 - `tslj-monetize/` — 成丹：变现承接
 - `tslj-open/` — 开炉：开头与结构
