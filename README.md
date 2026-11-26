@@ -41,6 +41,7 @@
 - `consistency-auditor/` — 一致性一号（审片第二步）：逐镜核对人物定妆、脸型身份、服装造型、道具、场景布局与跨镜头视觉连续性
 - `sound-auditor/` — 声音审核一号（审片第三步）：全量声音审核——每个可听见的声音都要有剧本/画面/物理依据，双向溯源，带时间码报告与返修指令，S/A 级问题即 FAIL
 - `sound-repair-director/` — 声音反修一号：声音审核判 FAIL 后做逐项诊断、定最小修复方案、生成可直接执行的 AI 声音返修提示词，修后回声音审核一号复审
+- `shot-continuity-repair-director/` — 镜头衔接审片与电影级返修提示词官（合成片专用，审片流程位于双导演审核之后）：逐个编号审核合成片每个镜头边界（CUT），查动作/空间/轴线/视线/光线/节奏衔接与整体观感，S/A 级必须返修，每项问题给修复路径（纯剪辑优先）+可复制的电影级返修提示词+验收标准，返修后看合成片复审
 - `seedance-shot-design/` — >
 - `skill-auto-router/` — "Use when starting any conversation or receiving any task from the user — automatically se…
 - `taishang-laojun/` — 太上老君炼丹炉总控台
